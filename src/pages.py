@@ -9,6 +9,9 @@ class page_v1:
     def open(self,url:str):
         self.page.goto(url)
 
+    def title(self) -> str:
+        return self.page.title()
+
     def close(self):
         self.context.close()
         self.browser.close()
