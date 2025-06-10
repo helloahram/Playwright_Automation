@@ -1,70 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3 (Python 3.11.11 on darwin)" generated="2025-06-09T16:07:24.576186" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3 (Python 3.11.11 on darwin)" generated="2025-06-10T14:25:23.710024" rpa="false" schemaversion="5">
 <suite id="s1" name="Web Access" source="/Users/ahram/Desktop/sample_automation/robot/web_access.robot">
-<test id="s1-t1" name="NAVER : Check Main Page" line="7">
+<test id="s1-t1" name="NAVER : Check Main Page" line="8">
 <kw name="Initialize Environment" owner="web_access" type="SETUP">
 <kw name="No Operation" owner="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="PASS" start="2025-06-09T16:07:24.624889" elapsed="0.000071"/>
+<status status="PASS" start="2025-06-10T14:25:23.756293" elapsed="0.000067"/>
 </kw>
 <doc>각 Test Case 수행 시 환경 초기화를 위함</doc>
-<status status="PASS" start="2025-06-09T16:07:24.624629" elapsed="0.000381"/>
+<status status="PASS" start="2025-06-10T14:25:23.756037" elapsed="0.000369"/>
 </kw>
 <kw name="Access To Web Page" owner="web_access">
 <kw name="Check Main Page" owner="main_page_test_case">
 <arg>${url}</arg>
-<status status="PASS" start="2025-06-09T16:07:24.625249" elapsed="7.183657"/>
+<status status="PASS" start="2025-06-10T14:25:23.756638" elapsed="6.394596"/>
 </kw>
 <arg>https://www.naver.com</arg>
-<status status="PASS" start="2025-06-09T16:07:24.625119" elapsed="7.183980"/>
+<status status="PASS" start="2025-06-10T14:25:23.756512" elapsed="6.394897"/>
 </kw>
-<kw name="Close Environment" owner="web_access" type="TEARDOWN">
-<kw name="No Operation" owner="BuiltIn">
-<doc>Does absolutely nothing.</doc>
-<status status="PASS" start="2025-06-09T16:07:31.809759" elapsed="0.000087"/>
-</kw>
-<doc>각 Test Case 완료 후 환경 정리를 위함</doc>
-<status status="PASS" start="2025-06-09T16:07:31.809518" elapsed="0.000362"/>
-</kw>
-<status status="PASS" start="2025-06-09T16:07:24.624225" elapsed="7.185699"/>
-</test>
-<test id="s1-t2" name="NAVER : Check Web Title" line="10">
-<kw name="Initialize Environment" owner="web_access" type="SETUP">
-<kw name="No Operation" owner="BuiltIn">
-<doc>Does absolutely nothing.</doc>
-<status status="PASS" start="2025-06-09T16:07:31.810422" elapsed="0.000057"/>
-</kw>
-<doc>각 Test Case 수행 시 환경 초기화를 위함</doc>
-<status status="PASS" start="2025-06-09T16:07:31.810289" elapsed="0.000225"/>
-</kw>
-<kw name="Check the Web Title" owner="web_access">
 <kw name="Check Web Title" owner="main_page_test_case">
-<arg>${url}</arg>
-<status status="PASS" start="2025-06-09T16:07:31.810739" elapsed="2.019021"/>
-</kw>
 <arg>https://www.naver.com</arg>
-<status status="PASS" start="2025-06-09T16:07:31.810615" elapsed="2.019314"/>
+<status status="PASS" start="2025-06-10T14:25:30.151657" elapsed="1.918370"/>
 </kw>
 <kw name="Close Environment" owner="web_access" type="TEARDOWN">
 <kw name="No Operation" owner="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="PASS" start="2025-06-09T16:07:33.830450" elapsed="0.000063"/>
+<status status="PASS" start="2025-06-10T14:25:32.070783" elapsed="0.000086"/>
 </kw>
 <doc>각 Test Case 완료 후 환경 정리를 위함</doc>
-<status status="PASS" start="2025-06-09T16:07:33.830256" elapsed="0.000287"/>
+<status status="PASS" start="2025-06-10T14:25:32.070553" elapsed="0.000352"/>
 </kw>
-<status status="PASS" start="2025-06-09T16:07:31.810063" elapsed="2.020517"/>
+<status status="PASS" start="2025-06-10T14:25:23.755669" elapsed="8.315282"/>
 </test>
-<status status="PASS" start="2025-06-09T16:07:24.576961" elapsed="9.253884"/>
+<status status="PASS" start="2025-06-10T14:25:23.710800" elapsed="8.360450"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Web Access" id="s1" pass="2" fail="0" skip="0">Web Access</stat>
+<stat name="Web Access" id="s1" pass="1" fail="0" skip="0">Web Access</stat>
 </suite>
 </statistics>
 <errors>

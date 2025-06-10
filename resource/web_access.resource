@@ -13,7 +13,3 @@ Close Environment
 Access To Web Page
     [Arguments]    ${url}
     Check Main Page    ${url}
-
-Check the Web Title
-    [Arguments]    ${url}
-    Check Web Title     ${url}

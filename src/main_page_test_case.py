@@ -1,5 +1,5 @@
 import time
-from pages import page_v1
+from main_page import page_v1
 from playwright.sync_api import sync_playwright
 
 def check_main_page(url:str):
