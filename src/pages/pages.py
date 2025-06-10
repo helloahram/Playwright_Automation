@@ -11,6 +11,18 @@ class page_v1:
 
     def title(self) -> str:
         return self.page.title()
+    
+    def search(self, keyword: str):
+        self.page.fill('input[name="query"]', keyword)
+        self.page.keyboard.press("Enter")
+
+    def get_content(self) -> str:
+        self.page.wait_for_selector("body", timeout=5000)
+        return self.page.content()
+    
+    def validate_result_contain(self, keyword):
+        self.page.wait_for_selector("body", timeout=5000)
+        assert keyword in self.page.content()
 
     def close(self):
         self.context.close()

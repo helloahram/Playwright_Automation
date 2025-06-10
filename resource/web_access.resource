@@ -13,3 +13,7 @@ Close Environment
 Access To Web Page
     [Arguments]    ${url}
     Check Main Page    ${url}
+
+Access to Weather
+    [Arguments]    ${url}
+    Check Weather    ${url}
