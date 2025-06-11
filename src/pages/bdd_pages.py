@@ -10,7 +10,7 @@ def go_to(url):
     global _browser, _page, _context
     pw = sync_playwright().start()
     _browser = pw.chromium.launch(headless=False)
-    _context = _browser.new_context()
+    _context = _browser.new_context(viewport={"width": 2560, "height": 1310})
     _page = _context.new_page()
     _page.goto(url)
 
