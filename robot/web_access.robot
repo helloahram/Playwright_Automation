@@ -11,3 +11,6 @@ NAVER : Check Main Page
 
 NAVER : Check the Weather
     Check Weather   https://www.naver.com
+
+NAVER : Check the News
+    Check News   https://www.naver.com

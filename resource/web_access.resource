@@ -17,3 +17,7 @@ Access To Web Page
 Access to Weather
     [Arguments]    ${url}
     Check Weather    ${url}
+
+Access to News
+    [Arguments]    ${url}
+    Check News    ${url}

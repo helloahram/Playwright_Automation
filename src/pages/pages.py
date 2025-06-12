@@ -1,4 +1,18 @@
-from playwright.sync_api import Playwright, expect
+from playwright.sync_api import Playwright, expect, sync_playwright
+
+# 글로벌 상태 저장 변수
+_browser = None
+_page = None
+_context = None
+_title = ""
+
+def go_to(url):
+    global _browser, _page, _context
+    pw = sync_playwright().start()
+    _browser = pw.chromium.launch(headless=False)
+    _context = _browser.new_context(viewport={"width": 2560, "height": 1310})
+    _page = _context.new_page()
+    _page.goto(url)
 
 class page_v1:
     def __init__(self, playwright: Playwright):
