@@ -21,3 +21,7 @@ Access to Weather
 Access to News
     [Arguments]    ${url}
     Check News    ${url}
+
+Check the Fail
+    [Arguments]    ${url}
+    Check Fail    ${url}
