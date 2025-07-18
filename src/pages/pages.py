@@ -18,7 +18,7 @@ def go_to(url):
 
 class page_v1:
     def __init__(self, playwright: Playwright):
-        self.browser = playwright.chromium.launch(headless=False)
+        self.browser = playwright.chromium.launch(headless=True)
         self.context = self.browser.new_context(
             viewport={"width": 2560, "height": 1310}
         )
