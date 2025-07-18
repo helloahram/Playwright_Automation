@@ -75,7 +75,7 @@ def check_news(url: str):
 
 # def check_fail(url: str):
 #     with sync_playwright() as playwright:
-#         browser = playwright.chromium.launch(headless=False)
+#         browser = playwright.chromium.launch(headless=True)
 #         context = browser.new_context()
 #         page = context.new_page()
 #         try:
