@@ -14,6 +14,10 @@ Access To Web Page
     [Arguments]    ${url}
     Check Main Page    ${url}
 
+Check the Web Title
+    [Arguments]    ${url}
+    Check Web Title    ${url}
+
 Access to Weather
     [Arguments]    ${url}
     Check Weather    ${url}

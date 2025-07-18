@@ -9,6 +9,9 @@ NAVER : Check Main Page
     Access To Web Page    https://www.naver.com
     Check Web Title   https://www.naver.com
 
+NAVER : Check the Web Title 
+    Check Web Title   https://www.naver.com
+
 NAVER : Check the Weather
     Check Weather   https://www.naver.com
 
