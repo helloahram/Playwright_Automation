@@ -14,6 +14,3 @@ NAVER : Check the Weather
 
 NAVER : Check the News
     Check News   https://www.naver.com
-
-NAVER : Fail Test
-    Check Fail  https://www.naver.com 
