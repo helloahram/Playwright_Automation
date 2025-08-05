@@ -26,7 +26,7 @@ async def check_web_title(url: str):
             await browser.close()
 
 
-async def check_weather(url: str):
+async def access_weather(url: str):
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch(headless=True)
         context = await browser.new_context()
@@ -44,7 +44,7 @@ async def check_weather(url: str):
             await browser.close()
 
 
-async def check_news(url: str):
+async def access_news(url: str):
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch(headless=True)
         context = await browser.new_context()

@@ -31,7 +31,7 @@ def check_web_title(url: str):
         pass
 
 
-def check_weather(url: str):
+def access_weather(url: str):
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
         context = browser.new_context()
@@ -52,7 +52,7 @@ def check_weather(url: str):
             browser.close()
 
 
-def check_news(url: str):
+def access_news(url: str):
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
         context = browser.new_context()

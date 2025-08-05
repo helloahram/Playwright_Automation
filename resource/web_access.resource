@@ -20,9 +20,9 @@ Check the Web Title
 
 Access to Weather
     [Arguments]    ${url}
-    Check Weather    ${url}
+    Access Weather    ${url}
 
 Access to News
     [Arguments]    ${url}
-    Check News    ${url}
+    Access News    ${url}
 

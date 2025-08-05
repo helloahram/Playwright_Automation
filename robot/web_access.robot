@@ -13,7 +13,7 @@ NAVER : Check the Web Title
     Check Web Title   https://www.naver.com
 
 NAVER : Check the Weather
-    Check Weather   https://www.naver.com
+    Access Weather   https://www.naver.com
 
 NAVER : Check the News
-    Check News   https://www.naver.com
+    Access News   https://www.naver.com
