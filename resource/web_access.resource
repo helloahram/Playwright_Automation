@@ -18,11 +18,14 @@ Check the Web Title
     [Arguments]    ${url}
     Check Web Title    ${url}
 
-Access to Weather
+Access to Cafe
     [Arguments]    ${url}
-    Access Weather    ${url}
+    Access Cafe    ${url}
 
 Access to News
     [Arguments]    ${url}
     Access News    ${url}
 
+Access to Weather
+    [Arguments]    ${url}
+    Access Weather    ${url}
