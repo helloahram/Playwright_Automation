@@ -1,3 +1,4 @@
+# src/pages/main_page_test_case.py
 import asyncio
 from playwright.async_api import async_playwright
 
@@ -22,6 +23,25 @@ async def check_web_title(url: str):
         try:
             await page.goto(url)
             assert await page.title() == "NAVER"
+        finally:
+            await browser.close()
+
+
+async def access_mail_w_login(url: str):
+    async with async_playwright() as playwright:
+        browser = await playwright.chromium.launch(headless=True)
+        # 로그인 세션 적용
+        context = await browser.new_context(storage_state="naver_logged_in.json")
+        page = await context.new_page()
+        try:
+            await page.goto(url)
+            await page.get_by_role("button", name="바로가기 펼침").click()
+            async with page.expect_popup() as popup_info:
+                await page.get_by_label("주요 서비스").get_by_role(
+                    "link", name="메일"
+                ).click()
+            page1 = await popup_info.value
+            assert "메일" in await page1.title()
         finally:
             await browser.close()
 

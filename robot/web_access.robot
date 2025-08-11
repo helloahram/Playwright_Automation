@@ -12,6 +12,9 @@ NAVER : Check Main Page
 NAVER : Check the Web Title 
     Check Web Title   https://www.naver.com
 
+NAVER : Check the Mail w Login
+    Access Mail w login   https://www.naver.com
+
 NAVER : Check the Cafe
     Access Cafe   https://www.naver.com
 
