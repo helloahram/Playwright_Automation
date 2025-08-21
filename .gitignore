@@ -5,6 +5,7 @@ __pycache__/
 
 # Private Information
 naver_logged_in.json
+send_slack.py
 
 # HTML, xml
 *.html
