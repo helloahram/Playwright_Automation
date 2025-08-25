@@ -11,4 +11,4 @@ def load_logged_in_context():
             context = await browser.new_context(storage_state=SESSION_PATH)
             return browser, context
 
-    return run()  # 코루틴 객체를 반환해서 호출측에서 await로 받는다
+    return run()  # 코루틴 객체를 반환해서 호출 측에서 await 로 받는다
